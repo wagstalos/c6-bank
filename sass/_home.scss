@@ -140,6 +140,30 @@
             margin-top: -165px;
         }
     }
+
+    @include responsive(800px){
+       .container{
+           flex-direction: column;
+           text-align: center;
+       }
+       .area-image img {
+        margin-top: -50px;
+        }
+        .text{
+            .row{
+                width: 100%;
+                justify-content: center;
+            }
+            .col{
+                max-width: 100%;
+                text-align: center;
+            }
+            img, .underline{
+                margin: 0 auto;
+            }
+        }
+        
+     }
 }
 
 .s-banco-c6{
@@ -245,4 +269,32 @@
         }
     
     }
+    @include responsive(800px){
+        .container{
+            .top{
+                flex-direction: column;
+                text-align: center;
+                ul{
+                    margin-top: 4rem;
+                    width: 100%;
+                }
+            }
+            .box-cel{
+                flex-direction: column;
+                text-align: center;
+                .img-box-cel {
+                    margin-top: 160px;
+                }
+                .card-carbon {
+                    position: absolute;
+                    left: 0;
+                    margin-top: 74%;
+                }
+                .img-c6-bussines{
+                    display: none;
+                }
+            }
+        }
+    }
+
 }

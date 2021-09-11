@@ -33,8 +33,9 @@
     &.white{
         border: 1px solid #fff;
         color: #fff;
+        transition: all .3s;
         &:hover{
-            background-color: #ffffff80;
+            background-color: #ffffff;
             color: $brand-yellow;
         }
     }
