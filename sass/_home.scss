@@ -55,6 +55,7 @@
             color: $white;
             opacity: 0.7;
         }
+    
     }
     
 @include responsive(800px){
@@ -71,6 +72,18 @@
             justify-content: center;
         }
         
+    }
+ }
+ @include responsive(600px){
+    .text{
+        .lead{
+            span{
+                display: none;
+            }
+        }
+    }
+    .btn-primary {
+        background-color: rgb(36, 33, 33)!important;
     }
  }
  
@@ -161,9 +174,17 @@
             img, .underline{
                 margin: 0 auto;
             }
-        }
-        
+          
+            
+        }  
      }
+     
+    @include responsive(800px){
+        .area-image img {
+         display: none;
+         }
+
+      }
 }
 
 .s-banco-c6{
@@ -269,6 +290,7 @@
         }
     
     }
+
     @include responsive(800px){
         .container{
             .top{
@@ -296,5 +318,48 @@
             }
         }
     }
+
+    @include responsive(600px){
+        .container{
+            .top{
+                flex-direction: column;
+                text-align: center;
+                ul{
+                    margin-top: 4rem;
+                    width: 100%;
+                    li{
+                       font-size: 1.4rem;;
+                    }
+                }
+            }
+            .box-cel{
+                flex-direction: column;
+                text-align: center;
+                .text-box-cel{
+                   margin: 64px 40px 0 40px;
+                   text-align: center;
+                   h3{
+                       max-width: 100%;
+                   }
+                   .nfc{
+                    justify-content: center;
+                   }
+
+                }
+                .img-box-cel {
+                    margin-top: 90px;
+                }
+                .card-carbon {
+                    position: absolute;
+                    left: 0;
+                    margin-top: 90%;
+                }
+                .img-c6-bussines{
+                    display: none;
+                }
+            }
+        }
+    }
+    
 
 }

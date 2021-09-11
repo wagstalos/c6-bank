@@ -48,5 +48,13 @@ header{
             
         }
     }
+    @include responsive(600px){
+        nav{
+            ul{
+                display: none;
+            }
+            
+        }
+    }
 }
 
