@@ -1,5 +1,5 @@
 # c6-bank
-Desafio do curso da Insany
+Desafio do curso da Insany recriar um layout do figma Apenas com Flexbox totalmente responsivo!
 
 #techs
 
