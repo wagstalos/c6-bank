@@ -1,56 +1,52 @@
-
-.btn-primary ,
-.btn-secondary{
-    font-family: 'Montserrat', sans-serif;
+.btn-primary,
+.btn-secondary {
+    font-family: "Montserrat", sans-serif;
     border-radius: 122px;
     display: inline-block;
     padding: 0 5rem;
     font-size: 1.8rem;
     line-height: 4.8rem;
     font-weight: 500;
-
 }
 
-.btn-primary{
-    background-color: $brand-yellow;
+.btn-primary {
+    background-color: $brand-green-light;
     font-weight: 500;
-    color:$brand-black;
-    transition: background-color .3s;
-    &:hover{
-        background-color: #FFDC5C;
+    color: $brand-black;
+    transition:
+        background-color 0.3s ease-in,
+        color 0.3s ease-in;
+    &:hover {
+        background-color: $white;
     }
-    
-    
 }
 
-.btn-secondary{
-    border: 1px solid #00A5F0;
+.btn-secondary {
+    border: 1px solid #00a5f0;
     background-color: transparent;
     font-weight: 500;
     color: $brand-blue-light;
-    transition: all .3s;
-    &:hover{
+    transition: all 0.3s;
+    &:hover {
         background-color: $brand-blue-light;
-        color: #fff;
+        color: $white;
     }
-    &.white{
-        border: 1px solid #fff;
-        color: #fff;
-        transition: all .3s;
-        &:hover{
-            background-color: #ffffff;
-            color: $brand-yellow;
+    &.white {
+        border: 1px solid $white;
+        color: $white;
+        transition: all 0.3s;
+        &:hover {
+            background-color: $white;
+            color: $brand-black;
         }
     }
-     
 }
 
-@include responsive(600px){
-    .btn-primary{
-        line-height: .8rem;
+@include responsive(600px) {
+    .btn-primary {
+        line-height: 0.8rem;
         height: 45px;
         padding: 0 2rem;
         font-size: 1.5rem;
     }
- }
- 
+}
